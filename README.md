@@ -1,0 +1,65 @@
+# Prompt Engineering Lab
+
+A course-to-code learning lab for studying prompt engineering through notes, experiments, and publishable artifacts.
+
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
+
+## Overview
+
+This project follows a simple workflow: read, explain ideas in plain language, build small experiments, and turn the results into reusable learning materials.
+
+## Learning Roadmap
+
+| Chapter | Status | Notes | Notebook | One-line Takeaway |
+| --- | --- | --- | --- | --- |
+| Introduction | ⬜ | - | - | - |
+| LLM Settings | ⬜ | - | - | - |
+| Basics of Prompting | ⬜ | - | - | - |
+| Prompt Elements | ⬜ | - | - | - |
+| General Tips | ⬜ | - | - | - |
+| Zero-Shot | ⬜ | - | - | - |
+| Few-Shot | ⬜ | - | - | - |
+| Chain-of-Thought | ⬜ | - | - | - |
+| Self-Consistency | ⬜ | - | - | - |
+| Tree of Thoughts | ⬜ | - | - | - |
+| RAG | ⬜ | - | - | - |
+| ReAct | ⬜ | - | - | - |
+| Adversarial Prompting | ⬜ | - | - | - |
+| AI Agents | ⬜ | - | - | - |
+
+## Project Structure
+
+```text
+prompt-engineering-lab/
+├── notes/
+├── notebooks/
+├── prompts/
+├── projects/
+├── .env.example
+├── .gitignore
+├── LEARNING_LOG.md
+├── README.md
+└── requirements.txt
+```
+
+## Quick Start
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env
+python -m ipykernel install --user --name prompt-engineering-lab
+jupyter notebook
+```
+
+## Learning Log
+
+- [Learning Log](./LEARNING_LOG.md)
+
+## References
+
+- [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
+- [Feynman Technique](https://fs.blog/feynman-technique/)
