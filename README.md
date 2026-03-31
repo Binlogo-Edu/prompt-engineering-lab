@@ -14,8 +14,8 @@ This project follows a simple workflow: read, explain ideas in plain language, b
 
 | Chapter | Status | Notes | Notebook | One-line Takeaway |
 | --- | --- | --- | --- | --- |
-| Introduction | ⬜ | - | - | - |
-| LLM Settings | ⬜ | - | - | - |
+| Introduction | ✅ Done | [notes/introduction.md](./notes/introduction.md) | [notebooks/01_introduction_practice.ipynb](./notebooks/01_introduction_practice.ipynb) | Prompt engineering is the systematic design of inputs to reliably bring out LLM capability. |
+| LLM Settings | 🟨 In Progress | [notes/llm-settings.md](./notes/llm-settings.md) | [notebooks/02_llm_settings_practice.ipynb](./notebooks/02_llm_settings_practice.ipynb) | Model behavior depends not only on prompts but also on decoding settings and model configuration. |
 | Basics of Prompting | ⬜ | - | - | - |
 | Prompt Elements | ⬜ | - | - | - |
 | General Tips | ⬜ | - | - | - |
