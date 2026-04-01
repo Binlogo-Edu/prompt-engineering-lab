@@ -18,7 +18,7 @@ This project follows a simple workflow: read, explain ideas in plain language, b
 | LLM Settings | ✅ Done | [notes/llm-settings.md](./notes/llm-settings.md) | [notebooks/02_llm_settings_practice.ipynb](./notebooks/02_llm_settings_practice.ipynb) | Model behavior depends not only on prompts but also on decoding settings and model configuration. |
 | Basics of Prompting | ✅ Done | [notes/basics-of-prompting.md](./notes/basics-of-prompting.md) | - | Clear instructions, context, and examples make prompts more reliable than raw text alone. |
 | Prompt Elements | ✅ Done | [notes/prompt-elements.md](./notes/prompt-elements.md) | [notebooks/03_prompt_elements_practice.ipynb](./notebooks/03_prompt_elements_practice.ipynb) | A strong prompt is built from reusable parts such as instruction, context, input data, and output indicator. |
-| General Tips | ⬜ | - | - | - |
+| General Tips | ✅ Done | [notes/general-tips.md](./notes/general-tips.md) | [notebooks/04_general_tips_practice.ipynb](./notebooks/04_general_tips_practice.ipynb) | Start simple, be specific, separate instructions clearly, and say what to do instead of only what not to do. |
 | Zero-Shot | ⬜ | - | - | - |
 | Few-Shot | ⬜ | - | - | - |
 | Chain-of-Thought | ⬜ | - | - | - |

@@ -59,3 +59,26 @@
 
 ### Tomorrow's plan
 - Move on to General Tips
+
+## 2026-04-03
+### What I studied
+- Started General Tips for Designing Prompts
+- Reviewed five design principles: start simple, write strong instructions, be specific, avoid imprecise wording, and prefer telling the model what to do
+- Compared weak and improved prompt examples
+- Passed the first self-test on prompt design principles
+- Passed a second round focused on rewriting weak prompts and deciding when to split tasks
+
+### Key insights
+- Prompt design is iterative, so a simple starting point is usually better than an overloaded first draft
+- Specificity improves reliability, but only when the details are relevant to the task
+- Direct instructions work better than vague style constraints
+- Negative-only instructions often fail; positive directions are easier for the model to follow
+- Large compound tasks should usually be split into smaller prompts so each step stays clear and testable
+- Vague phrases like `briefly`, `not too technical`, and `not too long` should be replaced by concrete constraints
+
+### Confusions / open questions
+- How specific is too specific before the prompt becomes noisy?
+- When should a task be split into subtasks instead of adding more detail to one prompt?
+
+### Tomorrow's plan
+- Move on to Zero-Shot
