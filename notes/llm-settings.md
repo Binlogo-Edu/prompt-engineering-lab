@@ -2,7 +2,7 @@
 
 ## Status
 
-In progress on 2026-04-01.
+Completed on 2026-04-01 after explanation, self-test, and note update.
 
 ## Core idea
 
@@ -20,7 +20,22 @@ A prompt does not determine the output by itself. Model choice and decoding sett
 
 - lower `temperature` helps with stable structured outputs
 - higher `temperature` helps with variation and creativity
+- `top_p` controls how wide the candidate answer/token space is before sampling
 - changing both `temperature` and `top_p` aggressively at the same time makes results harder to interpret
+- `frequency penalty` discourages repeated tokens based on how often they already appeared
+- `presence penalty` discourages reusing tokens once they have appeared at all
+- the concepts are similar across OpenAI, Claude, and Gemini, but parameter names, support, and actual behavior differ by provider/model
+
+## Self-check
+
+Passed quiz on 2026-04-01.
+
+- stable output = lower `temperature`
+- `top_p` = broader or narrower candidate pool
+- change one major sampling knob at a time for cleaner experiments
+- frequency penalty = repetition count matters
+- presence penalty = repeated appearance itself matters
+- cross-provider behavior is similar in concept, not identical in API or effect
 
 ## Why settings matter
 
