@@ -36,4 +36,4 @@
 - Learn how model choice, max tokens, and stop sequences affect output quality
 
 ### Tomorrow's plan
-- Start the LLM Settings chapter and connect parameter concepts to actual prompting behavior
+- Begin Basics of Prompting and build intuition for instruction, context, zero-shot, and few-shot formats
