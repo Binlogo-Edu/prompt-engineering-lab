@@ -37,3 +37,25 @@
 
 ### Tomorrow's plan
 - Begin Basics of Prompting and build intuition for instruction, context, zero-shot, and few-shot formats
+
+## 2026-04-02
+### What I studied
+- Started Prompt Elements
+- Broke prompts into instruction, context, input data, and output indicator
+- Reviewed a sentiment classification prompt and identified which element each line belongs to
+- Passed the first self-test on prompt element identification
+- Passed a second round focused on prompt analysis and failure diagnosis
+
+### Key insights
+- Not every prompt needs all four elements
+- The role of each element is different: task definition, steering information, task payload, and output constraint
+- Output indicators are small but powerful because they shape answer format and task completion
+- A translation prompt can work with only instruction, input data, and output indicator when the task is simple and unambiguous
+- Audience framing like "for an engineering manager" usually acts as context because it steers style and relevance rather than defining the base task
+
+### Confusions / open questions
+- When should context be included versus omitted for simpler tasks?
+- How much output formatting guidance is enough before it becomes over-specified?
+
+### Tomorrow's plan
+- Move on to General Tips
