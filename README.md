@@ -57,6 +57,8 @@ jupyter notebook
 
 ## Learning Log
 
+Session-based notes live in `LEARNING_LOG.md`. Chapter-level completion status stays in the roadmap above.
+
 - [Learning Log](./LEARNING_LOG.md)
 
 ## References

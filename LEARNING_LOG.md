@@ -1,84 +1,122 @@
 # Learning Log
 
-## 2026-03-31
+This log is organized by learning progress instead of assumed calendar days.
+
+Why this format:
+
+- one real-world day may include multiple chapters
+- a chapter may span multiple sessions
+- using fixed dates per chapter created inaccurate future-dated entries
+
+Logging rule going forward:
+
+- record by `Session` or `Chapter` milestone
+- only use an explicit date when it is certain from the current session
+- prefer `Last updated` over inventing a new study date
+
+Last updated: 2026-04-02
+
+## Session 01
+
+### Focus
+
+- Introduction
+
 ### What I studied
-- Introduction: what prompt engineering is and why it matters
-- The guide's experiment setup: `gpt-3.5-turbo`, `temperature=1`, `top_p=1`
-- Why prompt results vary across models and settings
+
+- what prompt engineering is and why it matters
+- the guide's experiment setup: `gpt-3.5-turbo`, `temperature=1`, `top_p=1`
+- why prompt results vary across models and settings
 
 ### Key insights
-- Prompt engineering is not just writing better prompts; it is the systematic design of inputs for LLM tasks
-- Prompt quality should be evaluated with an experimental mindset because outputs change with model and sampling settings
+
+- prompt engineering is not just writing better prompts; it is the systematic design of inputs for LLM tasks
+- prompt quality should be evaluated with an experimental mindset because outputs change with model and sampling settings
 - `temperature` controls randomness; `top_p` controls how much of the probability mass is considered during token sampling
 
 ### Confusions / open questions
-- Why this guide uses `temperature=1` and `top_p=1` as defaults
-- When to change `temperature` versus when to change `top_p`
 
-### Tomorrow's plan
-- Continue to LLM Settings after finishing the Introduction practice notebook
+- why this guide uses `temperature=1` and `top_p=1` as defaults
+- when to change `temperature` versus when to change `top_p`
 
-## 2026-04-01
+## Session 02
+
+### Focus
+
+- Introduction review
+- LLM Settings warm-up
+
 ### What I studied
-- Reviewed Introduction through self-test and explanation in my own words
-- Clarified the difference between `temperature` and `top_p`
-- Confirmed when to lower `temperature` for stable structured outputs
-- Started the LLM Settings chapter warm-up
+
+- reviewed Introduction through self-test and explanation in my own words
+- clarified the difference between `temperature` and `top_p`
+- confirmed when to lower `temperature` for stable structured outputs
+- started the LLM Settings chapter warm-up
 
 ### Key insights
-- Prompt engineering is about designing inputs for real tasks, not only polishing wording
-- Lower `temperature` is better for predictable outputs such as JSON
+
+- prompt engineering is about designing inputs for real tasks, not only polishing wording
+- lower `temperature` is better for predictable outputs such as JSON
 - `top_p` limits token choice to a probability-mass subset, while `temperature` reshapes randomness within sampling
-- In production, changing multiple decoding knobs at once makes behavior harder to predict and debug
+- in production, changing multiple decoding knobs at once makes behavior harder to predict and debug
 
 ### Confusions / open questions
-- Build stronger intuition for `top_p` through examples instead of definitions alone
-- Learn how model choice, max tokens, and stop sequences affect output quality
 
-### Tomorrow's plan
-- Begin Basics of Prompting and build intuition for instruction, context, zero-shot, and few-shot formats
+- build stronger intuition for `top_p` through examples instead of definitions alone
+- learn how model choice, max tokens, and stop sequences affect output quality
 
-## 2026-04-02
+## Session 03
+
+### Focus
+
+- Prompt Elements
+
 ### What I studied
-- Started Prompt Elements
-- Broke prompts into instruction, context, input data, and output indicator
-- Reviewed a sentiment classification prompt and identified which element each line belongs to
-- Passed the first self-test on prompt element identification
-- Passed a second round focused on prompt analysis and failure diagnosis
+
+- broke prompts into instruction, context, input data, and output indicator
+- reviewed a sentiment classification prompt and identified which element each line belongs to
+- passed two rounds of self-test on prompt element identification and failure diagnosis
 
 ### Key insights
-- Not every prompt needs all four elements
-- The role of each element is different: task definition, steering information, task payload, and output constraint
-- Output indicators are small but powerful because they shape answer format and task completion
-- A translation prompt can work with only instruction, input data, and output indicator when the task is simple and unambiguous
-- Audience framing like "for an engineering manager" usually acts as context because it steers style and relevance rather than defining the base task
+
+- not every prompt needs all four elements
+- the role of each element is different: task definition, steering information, task payload, and output constraint
+- output indicators are small but powerful because they shape answer format and task completion
+- a translation prompt can work with only instruction, input data, and output indicator when the task is simple and unambiguous
+- audience framing like `for an engineering manager` usually acts as context because it steers style and relevance rather than defining the base task
 
 ### Confusions / open questions
-- When should context be included versus omitted for simpler tasks?
-- How much output formatting guidance is enough before it becomes over-specified?
 
-### Tomorrow's plan
-- Move on to General Tips
+- when should context be included versus omitted for simpler tasks?
+- how much output formatting guidance is enough before it becomes over-specified?
 
-## 2026-04-03
+## Session 04
+
+### Focus
+
+- General Tips for Designing Prompts
+
 ### What I studied
-- Started General Tips for Designing Prompts
-- Reviewed five design principles: start simple, write strong instructions, be specific, avoid imprecise wording, and prefer telling the model what to do
-- Compared weak and improved prompt examples
-- Passed the first self-test on prompt design principles
-- Passed a second round focused on rewriting weak prompts and deciding when to split tasks
+
+- reviewed five design principles: start simple, write strong instructions, be specific, avoid imprecise wording, and prefer telling the model what to do
+- compared weak and improved prompt examples
+- passed one self-test on prompt design principles and one rewrite-focused review round
 
 ### Key insights
-- Prompt design is iterative, so a simple starting point is usually better than an overloaded first draft
-- Specificity improves reliability, but only when the details are relevant to the task
-- Direct instructions work better than vague style constraints
-- Negative-only instructions often fail; positive directions are easier for the model to follow
-- Large compound tasks should usually be split into smaller prompts so each step stays clear and testable
-- Vague phrases like `briefly`, `not too technical`, and `not too long` should be replaced by concrete constraints
+
+- prompt design is iterative, so a simple starting point is usually better than an overloaded first draft
+- specificity improves reliability, but only when the details are relevant to the task
+- direct instructions work better than vague style constraints
+- negative-only instructions often fail; positive directions are easier for the model to follow
+- large compound tasks should usually be split into smaller prompts so each step stays clear and testable
+- vague phrases like `briefly`, `not too technical`, and `not too long` should be replaced by concrete constraints
 
 ### Confusions / open questions
-- How specific is too specific before the prompt becomes noisy?
-- When should a task be split into subtasks instead of adding more detail to one prompt?
 
-### Tomorrow's plan
-- Move on to Zero-Shot
+- how specific is too specific before the prompt becomes noisy?
+- when should a task be split into subtasks instead of adding more detail to one prompt?
+
+## Next Session Plan
+
+- begin Zero-Shot
+- connect zero-shot examples back to the reusable prompt patterns in `prompts/examples-of-prompts.md`
