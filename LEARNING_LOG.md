@@ -120,3 +120,32 @@ Last updated: 2026-04-02
 
 - begin Zero-Shot
 - connect zero-shot examples back to the reusable prompt patterns in `prompts/examples-of-prompts.md`
+
+## Session 05
+
+### Focus
+
+- Zero-Shot Prompting
+
+### What I studied
+
+- learned that zero-shot prompting means asking the model to do a task directly without examples
+- reviewed the sentiment classification example as a zero-shot task
+- connected zero-shot capability to instruction tuning and instruction-following behavior
+- confirmed the distinction between zero-shot and few-shot through self-check and terminology review
+
+### Key insights
+
+- zero-shot works when the model already understands the task pattern from pretraining and instruction tuning
+- zero-shot prompts rely heavily on clear instructions because there are no demonstrations to steer formatting
+- if zero-shot performance is weak, the next step is usually few-shot prompting rather than adding random wording
+- adding output constraints like JSON format does not break zero-shot as long as no examples are provided
+
+### Confusions / open questions
+
+- how to build stronger intuition for the meaning and naming of zero-shot versus few-shot
+
+### Result
+
+- zero-shot pass
+- ready to move on to few-shot
