@@ -20,7 +20,7 @@ This project follows a simple workflow: read, explain ideas in plain language, b
 | Prompt Elements | ✅ Done | [notes/prompt-elements.md](./notes/prompt-elements.md) | [notebooks/03_prompt_elements_practice.ipynb](./notebooks/03_prompt_elements_practice.ipynb) | A strong prompt is built from reusable parts such as instruction, context, input data, and output indicator. |
 | General Tips | ✅ Done | [notes/general-tips.md](./notes/general-tips.md) | [notebooks/04_general_tips_practice.ipynb](./notebooks/04_general_tips_practice.ipynb) | Start simple, be specific, separate instructions clearly, and say what to do instead of only what not to do. |
 | Zero-Shot | ✅ Done | [notes/zero-shot.md](./notes/zero-shot.md) | [notebooks/05_zero_shot_practice.ipynb](./notebooks/05_zero_shot_practice.ipynb) | Zero-shot prompting asks the model to do a task directly without demonstrations, relying on its instruction-following ability. |
-| Few-Shot | ⬜ | - | - | - |
+| Few-Shot | ✅ Done | [notes/few-shot.md](./notes/few-shot.md) | - | Few-shot provides labeled demonstrations so the model learns the task format and label space through in-context learning. |
 | Chain-of-Thought | ⬜ | - | - | - |
 | Self-Consistency | ⬜ | - | - | - |
 | Tree of Thoughts | ⬜ | - | - | - |

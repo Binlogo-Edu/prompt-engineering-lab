@@ -116,11 +116,6 @@ Last updated: 2026-04-02
 - how specific is too specific before the prompt becomes noisy?
 - when should a task be split into subtasks instead of adding more detail to one prompt?
 
-## Next Session Plan
-
-- begin Zero-Shot
-- connect zero-shot examples back to the reusable prompt patterns in `prompts/examples-of-prompts.md`
-
 ## Session 05
 
 ### Focus
@@ -149,3 +144,37 @@ Last updated: 2026-04-02
 
 - zero-shot pass
 - ready to move on to few-shot
+
+## Session 06
+
+### Focus
+
+- Few-Shot Prompting
+
+### What I studied
+
+- how few-shot prompting uses in-context demonstrations to guide model behavior
+- why format and label distribution in examples matter more than label correctness (Min et al. 2022)
+- the 1-shot word-usage example (whatpu / farduddle) showing in-context learning
+- why even randomly assigned labels still improve over no examples
+- the failure case: few-shot cannot reliably solve multi-step reasoning (odd numbers sum)
+- the connection to chain-of-thought prompting as the next technique
+
+### Key insights
+
+- few-shot works through in-context learning: no weight updates, just soft conditioning from examples
+- label correctness matters less than label space and input distribution
+- demonstrations primarily teach format and pattern, not facts
+- the failure mode of few-shot is exactly where chain-of-thought helps: intermediate reasoning steps
+
+### Confusions / open questions
+
+- how many examples is enough before adding more stops helping or hurts?
+- how to select representative examples when the input distribution is varied?
+
+### Result
+
+- few-shot pass on 2026-04-02
+- key insight: "模型学的是范式，不是答案" — model extracts pattern and format, not label correctness
+- understood why reasoning fails: missing intermediate steps, not missing problem description
+- ready to move on to Chain-of-Thought prompting
