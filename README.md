@@ -21,7 +21,7 @@ This project follows a simple workflow: read, explain ideas in plain language, b
 | General Tips | ✅ Done | [notes/general-tips.md](./notes/general-tips.md) | [notebooks/04_general_tips_practice.ipynb](./notebooks/04_general_tips_practice.ipynb) | Start simple, be specific, separate instructions clearly, and say what to do instead of only what not to do. |
 | Zero-Shot | ✅ Done | [notes/zero-shot.md](./notes/zero-shot.md) | [notebooks/05_zero_shot_practice.ipynb](./notebooks/05_zero_shot_practice.ipynb) | Zero-shot prompting asks the model to do a task directly without demonstrations, relying on its instruction-following ability. |
 | Few-Shot | ✅ Done | [notes/few-shot.md](./notes/few-shot.md) | - | Few-shot provides labeled demonstrations so the model learns the task format and label space through in-context learning. |
-| Chain-of-Thought | ⬜ | - | - | - |
+| Chain-of-Thought | ✅ Done | [notes/chain-of-thought.md](./notes/chain-of-thought.md) | - | CoT adds intermediate reasoning steps to demonstrations so the model learns how to solve problems, not just what format to answer in. |
 | Self-Consistency | ⬜ | - | - | - |
 | Tree of Thoughts | ⬜ | - | - | - |
 | RAG | ⬜ | - | - | - |

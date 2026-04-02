@@ -178,3 +178,33 @@ Last updated: 2026-04-02
 - key insight: "模型学的是范式，不是答案" — model extracts pattern and format, not label correctness
 - understood why reasoning fails: missing intermediate steps, not missing problem description
 - ready to move on to Chain-of-Thought prompting
+
+## Session 07
+
+### Focus
+
+- Chain-of-Thought (CoT) Prompting
+
+### What I studied
+
+- how CoT adds intermediate reasoning steps to fix the failure mode of few-shot on reasoning tasks
+- three variants: Few-shot CoT, Zero-shot CoT ("Let's think step by step"), and Auto-CoT
+- why Zero-shot CoT works: explicit instruction + activation of reasoning patterns from pretraining
+- why CoT is an emergent ability limited to large models
+- how Auto-CoT uses question clustering + Zero-shot CoT to auto-generate diverse demonstrations
+
+### Key insights
+
+- CoT teaches the model *how* to solve problems, not just *what format* to answer in
+- "Let's think step by step" activates pretraining patterns, not just issuing an instruction
+- Zero-shot CoT vs Few-shot CoT is a trade-off between **diversity/autonomy** and **control/convergence**
+- Auto-CoT's clustering step is critical — diversity prevents error propagation across demonstrations
+
+### Confusions / open questions
+
+- how to evaluate whether a CoT reasoning chain is actually correct vs. plausible-sounding but wrong?
+
+### Result
+
+- CoT pass on 2026-04-02
+- ready to move on to Self-Consistency prompting
