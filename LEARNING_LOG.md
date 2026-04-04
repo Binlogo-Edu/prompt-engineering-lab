@@ -14,7 +14,7 @@ Logging rule going forward:
 - only use an explicit date when it is certain from the current session
 - prefer `Last updated` over inventing a new study date
 
-Last updated: 2026-04-02
+Last updated: 2026-04-04
 
 ## Session 01
 
@@ -207,4 +207,29 @@ Last updated: 2026-04-02
 ### Result
 
 - CoT pass on 2026-04-02
+- ready to move on to Self-Consistency prompting
+
+## Session 08
+
+### Focus
+
+- Meta Prompting
+
+### What I studied
+
+- how Meta Prompting focuses on structure and syntax rather than specific content examples
+- the difference between content-driven (few-shot) and structure-driven (meta) approaches
+- why Meta Prompting is token-efficient: cognitive work of extracting structure is shifted to the prompt writer
+- why it can be seen as a zero-shot variant: no concrete content examples
+- its failure condition: relies on model's prior knowledge of the task domain
+
+### Key insights
+
+- Meta Prompting 是把"从示例归纳结构"的工作转移给了人，模型只接收结构指令
+- 失效边界与 zero-shot 类似：模型缺乏先验知识时无法填充正确内容
+- 数学推导选 CoT 而非 Meta Prompting：CoT 保证每一步计算正确，Meta 只约束形式
+
+### Result
+
+- Meta Prompting pass on 2026-04-04
 - ready to move on to Self-Consistency prompting

@@ -22,6 +22,7 @@ This project follows a simple workflow: read, explain ideas in plain language, b
 | Zero-Shot | ✅ Done | [notes/zero-shot.md](./notes/zero-shot.md) | [notebooks/05_zero_shot_practice.ipynb](./notebooks/05_zero_shot_practice.ipynb) | Zero-shot prompting asks the model to do a task directly without demonstrations, relying on its instruction-following ability. |
 | Few-Shot | ✅ Done | [notes/few-shot.md](./notes/few-shot.md) | - | Few-shot provides labeled demonstrations so the model learns the task format and label space through in-context learning. |
 | Chain-of-Thought | ✅ Done | [notes/chain-of-thought.md](./notes/chain-of-thought.md) | - | CoT adds intermediate reasoning steps to demonstrations so the model learns how to solve problems, not just what format to answer in. |
+| Meta Prompting | ✅ Done | [notes/meta-prompting.md](./notes/meta-prompting.md) | - | Meta Prompting uses abstract structural templates instead of content examples, shifting the work of pattern extraction from the model to the prompt writer. |
 | Self-Consistency | ⬜ | - | - | - |
 | Tree of Thoughts | ⬜ | - | - | - |
 | RAG | ⬜ | - | - | - |
