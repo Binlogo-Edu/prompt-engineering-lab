@@ -23,7 +23,7 @@ This project follows a simple workflow: read, explain ideas in plain language, b
 | Few-Shot | ✅ Done | [notes/few-shot.md](./notes/few-shot.md) | - | Few-shot provides labeled demonstrations so the model learns the task format and label space through in-context learning. |
 | Chain-of-Thought | ✅ Done | [notes/chain-of-thought.md](./notes/chain-of-thought.md) | - | CoT adds intermediate reasoning steps to demonstrations so the model learns how to solve problems, not just what format to answer in. |
 | Meta Prompting | ✅ Done | [notes/meta-prompting.md](./notes/meta-prompting.md) | - | Meta Prompting uses abstract structural templates instead of content examples, shifting the work of pattern extraction from the model to the prompt writer. |
-| Self-Consistency | ⬜ | - | - | - |
+| Self-Consistency | ✅ Done | [notes/self-consistency.md](./notes/self-consistency.md) | - | Self-Consistency samples multiple CoT reasoning paths and aggregates final answers by majority vote to improve reliability on deterministic reasoning tasks. |
 | Tree of Thoughts | ⬜ | - | - | - |
 | RAG | ⬜ | - | - | - |
 | ReAct | ⬜ | - | - | - |

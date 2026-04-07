@@ -14,7 +14,7 @@ Logging rule going forward:
 - only use an explicit date when it is certain from the current session
 - prefer `Last updated` over inventing a new study date
 
-Last updated: 2026-04-04
+Last updated: 2026-04-07
 
 ## Session 01
 
@@ -233,3 +233,28 @@ Last updated: 2026-04-04
 
 - Meta Prompting pass on 2026-04-04
 - ready to move on to Self-Consistency prompting
+
+## Session 09
+
+### Focus
+
+- Self-Consistency
+
+### What I studied
+
+- how Self-Consistency improves on CoT by sampling multiple reasoning paths and using majority voting
+- why single-path CoT decoding has no error correction mechanism
+- why majority voting works: error paths are diverse (divergent), correct paths converge to the same answer
+- why Self-Consistency is inapplicable to open-ended tasks: no objective correct answer to vote on
+- the engineering trade-off: token cost multiplies with number of samples
+
+### Key insights
+
+- "文无第一" — open-ended tasks have no ground truth, so voting has no meaning
+- Self-Consistency is not a default technique; the high cost means it's reserved for high-stakes reasoning tasks
+- 被淘汰的推理路径消耗算力却对最终答案无贡献，工程上需要权衡
+- 它更准确地说是对 CoT 采样/解码方式的增强，而不是把 CoT 本身定义成贪婪解码
+
+### Result
+
+- Self-Consistency pass on 2026-04-07
