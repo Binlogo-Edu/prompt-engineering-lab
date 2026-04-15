@@ -258,3 +258,30 @@ Last updated: 2026-04-07
 ### Result
 
 - Self-Consistency pass on 2026-04-07
+
+## Session 10
+
+### Focus
+
+- Tree of Thoughts (ToT)
+
+### What I studied
+
+- how ToT generalizes CoT from a single chain into a search tree over intermediate thoughts
+- why ToT is different from Self-Consistency: path selection happens during reasoning, not only at the end
+- the four key components: thought decomposition, thought generation, state evaluation, and search algorithm
+- how BFS and DFS can be used to expand, prune, and backtrack over candidate reasoning states
+- why ToT is useful for planning/search-heavy tasks such as Game of 24, creative writing planning, and mini crosswords
+
+### Key insights
+
+- CoT is a chain; ToT is a tree
+- Self-Consistency compares complete chains after generation, while ToT evaluates branches during generation
+- ToT is best understood as a reasoning-plus-search framework, not just a prompt wording trick
+- the power of ToT comes from branching, evaluation, and backtracking, but that also creates its main cost
+- ToT should be reserved for tasks where planning or search materially matters
+
+### Result
+
+- Tree of Thoughts pass on 2026-04-15
+- ready to move on to RAG
