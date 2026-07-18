@@ -14,7 +14,7 @@ Logging rule going forward:
 - only use an explicit date when it is certain from the current session
 - prefer `Last updated` over inventing a new study date
 
-Last updated: 2026-04-07
+Last updated: 2026-07-18
 
 ## Session 01
 
@@ -285,3 +285,36 @@ Last updated: 2026-04-07
 
 - Tree of Thoughts pass on 2026-04-15
 - ready to move on to RAG
+
+## Session 11
+
+### Focus
+
+- Retrieval-Augmented Generation (RAG)
+
+### What I studied
+
+- how RAG changes the model's information access pattern without changing model parameters
+- the core RAG pipeline: documents, chunking, embedding, retrieval, prompt with context, generation, and citation or refusal
+- why retrieval quality sets the upper bound for answer quality
+- how chunk size affects relevance and completeness
+- why embedding search can match semantically similar wording that keyword search may miss
+- why retrieving more chunks can add noise instead of improving answers
+- how to diagnose RAG failures by inspecting retrieved chunks before blaming the final model output
+- how to design a simple internal leave-policy QA bot with authoritative policy documents, semantic chunks, metadata, retrieval, reranking, and grounded answer instructions
+
+### Key insights
+
+- RAG is not training new knowledge into the model; it temporarily brings external evidence into the model's context
+- RAG does not change model weights, but retrieved context strongly affects the current answer
+- if the retriever brings in wrong or incomplete chunks, generation can fail even when the model itself is capable
+- chunking is a trade-off: chunks that are too large add noise, while chunks that are too small lose necessary context
+- embedding retrieval finds semantic similarity, not guaranteed factual relevance
+- `top_k` must balance recall and precision; more retrieved chunks can crowd out the useful evidence
+- "answer not found in the provided context" can indicate a conservative prompt, but often points to retrieval failure
+- RAG debugging should inspect retrieved chunks and final prompt context, not only the answer
+
+### Result
+
+- RAG basics pass on 2026-07-18
+- ready to move on to ReAct

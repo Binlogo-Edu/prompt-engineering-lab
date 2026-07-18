@@ -25,7 +25,7 @@ This project follows a simple workflow: read, explain ideas in plain language, b
 | Meta Prompting | ✅ Done | [notes/meta-prompting.md](./notes/meta-prompting.md) | - | Meta Prompting uses abstract structural templates instead of content examples, shifting the work of pattern extraction from the model to the prompt writer. |
 | Self-Consistency | ✅ Done | [notes/self-consistency.md](./notes/self-consistency.md) | - | Self-Consistency samples multiple CoT reasoning paths and aggregates final answers by majority vote to improve reliability on deterministic reasoning tasks. |
 | Tree of Thoughts | ✅ Done | [notes/tree-of-thoughts.md](./notes/tree-of-thoughts.md) | - | Tree of Thoughts treats reasoning as a search tree over intermediate thoughts, enabling branching, evaluation, and backtracking. |
-| RAG | ⬜ | - | - | - |
+| RAG | ✅ Done | [notes/rag.md](./notes/rag.md) | - | RAG retrieves relevant external knowledge and injects it into context so the model can answer with current, traceable evidence. |
 | ReAct | ⬜ | - | - | - |
 | Adversarial Prompting | ⬜ | - | - | - |
 | AI Agents | ⬜ | - | - | - |
